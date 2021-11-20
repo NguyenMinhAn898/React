@@ -14,6 +14,6 @@ function tick() {
   ReactDOM.render(element, document.getElementById("root"));
 }
 
-setInterval(tick, 1000);
+setInterval(tick, 1000); // callback update every second
 
 reportWebVitals();
