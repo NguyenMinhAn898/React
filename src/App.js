@@ -1,8 +1,5 @@
 import logo from "./images/logo.svg";
 import "./css/App.css";
-import footer from "./layout/footer.js";
-import helloworld from "./components/lv1/helloworld.js";
-import { render } from "@testing-library/react";
 
 function App() {
   return (
@@ -23,10 +20,6 @@ function App() {
       </header>
     </div>
   );
-}
-
-function HelloWorld() {
-  return <h1>Hello World !</h1>;
 }
 
 export default App;
