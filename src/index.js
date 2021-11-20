@@ -3,7 +3,9 @@ import ReactDOM from "react-dom";
 import "./css/index.css";
 import reportWebVitals from "./reportWebVitals";
 
+import LoginController from "./Login";
+
 // Helloworld
-ReactDOM.render(<h1>Hello, world!</h1>, document.getElementById("root"));
+ReactDOM.render(<LoginController />, document.getElementById("root"));
 
 reportWebVitals();
