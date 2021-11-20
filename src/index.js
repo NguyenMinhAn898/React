@@ -1,10 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./css/index.css";
-// import App from "./App";
+import { Form, Toggle } from "./Event";
 import reportWebVitals from "./reportWebVitals";
 
-// Helloworld
-ReactDOM.render(<h1>Hello, world!</h1>, document.getElementById("root"));
+// Bottom
+ReactDOM.render(<Form />, document.getElementById("root"));
+// Event Toggle
+ReactDOM.render(<Toggle />, document.getElementById("root"));
 
 reportWebVitals();
