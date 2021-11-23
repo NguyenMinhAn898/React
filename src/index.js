@@ -3,7 +3,27 @@ import ReactDOM from "react-dom";
 import "./css/index.css";
 import reportWebVitals from "./reportWebVitals";
 
-// Helloworld
-ReactDOM.render(<h1>Hello, world!</h1>, document.getElementById("root"));
+function Contacts() {
+  return <div className="Contacts" />;
+}
+
+function Chat() {
+  return <div className="Chat" />;
+}
+
+function SplitPane(props) {
+  return (
+    <div className="SplitPane">
+      <div className="SplitPane-left">{props.left}</div>
+      <div className="SplitPane-right">{props.right}</div>
+    </div>
+  );
+}
+
+function App() {
+  return <SplitPane left={<Contacts />} right={<Chat />} />;
+}
+
+ReactDOM.render(<App />, document.getElementById("root"));
 
 reportWebVitals();
